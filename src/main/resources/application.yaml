@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: diceware
+  thymeleaf:
+    enabled: true
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  error:
+    include-message: always
+  port: 18181
+  servlet:
+    context-path: /diceware
+
+diceware:
+  word-list: word-list.txt

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Diceware Passphrase Generator</title>
+  </head>
+
+  <body>
+    <ol>
+      <li th:each="word : ${words}" th:text="${word}">No words found</li>
+    </ol>
+  </body>
+
+</html>
